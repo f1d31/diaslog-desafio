@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">MapApp</mat-toolbar>
+<div class="address-search-container">
+  <div class="search-container">
+    <mat-form-field appearance="fill">
+      <mat-label>Insira um endereço</mat-label>
+      <input matInput #search>
+    </mat-form-field>
+  </div>
+  <div class="map-container" #mapContainer  [style.opacity]="showMap ? '1' : '0'" 
+       [style.visibility]="showMap ? 'visible' : 'hidden'" [style.height]="showMap ? 'calc(100vh - 100px)' : 0" ></div>
+</div>
